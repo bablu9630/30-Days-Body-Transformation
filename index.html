@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>30 Days Body Transformation PDF</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #000;
+      color: #e0ffe0;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    img.cover {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 20px #0f0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00ff88;
+      margin-bottom: 20px;
+    }
+
+    .form-section input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 2px solid #00ff88;
+      background: #111;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 8px;
+    }
+
+    .form-section button {
+      width: 100%;
+      padding: 14px;
+      background: #00ff88;
+      color: #000;
+      border: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .success-message {
+      display: none;
+      padding: 15px;
+      background: #0f0;
+      color: #000;
+      border-radius: 6px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .info-section {
+      background: #111;
+      border-left: 5px solid #00ff88;
+      padding: 15px;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+
+    .reviews {
+      margin-top: 30px;
+    }
+
+    .review {
+      background: #1a1a1a;
+      border-left: 4px solid #00ff88;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+    }
+
+    .contact {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 15px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Cover Image -->
+<!-- Cover Image (200px Width) -->
+<img src="image1.png" alt="Cover Image" style="
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0, 255, 0, 0.4);
+">
+
+
+
+
+    <!-- Heading -->
+    <h1>🔥 30 Days Body Transformation PDF</h1>
+
+    <!-- Form Section -->
+    <div class="form-section">
+      <form id="paymentForm" action="https://formspree.io/f/xzzrwqkv" method="POST">
+        <input type="text" name="name" placeholder="अपना नाम लिखें" required>
+        <input type="email" name="email" placeholder="अपना Gmail डालें" required>
+        <input type="text" name="utr" placeholder="UPI का UTR नंबर डालें" required>
+        <button type="submit">✅ Submit</button>
+      </form>
+      <div class="success-message" id="successMessage">
+        ✅ आपकी पेमेंट रिक्वेस्ट भेज दी गई है।<br>
+        📲 30 मिनट के अंदर WhatsApp से PDF भेज दी जाएगी।
+      </div>
+    </div>
+
+    <!-- About PDF -->
+    <div class="info-section">
+      <h2>📘 इस PDF में मिलेगा:</h2>
+      <ul>
+        <li>सुबह कितने बजे उठना है और कब सोना है</li>
+        <li>क्या खाना है – बिना डाइटिंग के वजन घटाओ</li>
+        <li>घर पर ही बॉडी बनाओ – बिना जिम जाए</li>
+        <li>ब्रह्मचर्य कैसे रखे – mind control techniques</li>
+        <li>हर दिन का प्लान – 30 दिनों में बदलाव</li>
+      </ul>
+      <strong>₹69 में पूरी knowledge और motivation!</strong>
+    </div>
+
+    <!-- Fake Reviews -->
+    <div class="reviews">
+      <h2>💬 लोगों की राय:</h2>
+      <div class="review"><strong>Rahul Soni:</strong> भाई, मैंने सिर्फ 22 दिन में अपनी बॉडी में बदलाव देख लिया। Amazing result 🔥</div>
+      <div class="review"><strong>Vikas Sharma:</strong> पहले लगा scam होगा, लेकिन PDF पढ़ते ही समझ गया कि ये real है! 💯</div>
+      <div class="review"><strong>Reena Fitness:</strong> मैं जिम नहीं जा सकती थी, घर पर ही वेट लॉस और शेरनी जैसी बॉडी बन गई! ❤️</div>
+      <div class="review"><strong>Ankit Thakur:</strong> Discipline level high हो गया! ब्रह्मचर्य वाला सेक्शन mind-blowing था।</div>
+      <div class="review"><strong>Pooja Mehra:</strong> ₹69 में इतनी knowledge? मैं तो हर किसी को recommend कर रही हूँ 💪</div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact">
+      ❓कोई भी समस्या हो तो हमें Email करें: <br><strong>babaluchoudhary9630@gmail.com</strong>
+    </div>
+
+  </div>
+
+  <script>
+    document.getElementById("paymentForm").addEventListener("submit", function(event){
+      event.preventDefault();
+      const form = event.target;
+
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if(response.ok){
+          form.style.display = "none";
+          document.getElementById("successMessage").style.display = "block";
+        } else {
+          alert("कुछ गलत हो गया, दोबारा कोशिश करें।");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
